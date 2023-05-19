@@ -1,0 +1,16 @@
+{
+    "ask_template": "您问的是 '{crimeII}' 的概念吗？", 
+    "choice_answer": "'盗窃罪' 是这样的：\n盗窃罪是指以非法占有为目的，窃取他人占有的数额较大的财物，或者多次盗窃的行为。", 
+    "cql_template": "MATCH (p:二级罪名)-[r:has_concept]->(q:概念) where p.name='{crimeII}' RETURN q.name", 
+    "deny_response": "很抱歉没有理解你的意思呢~", 
+    "intent_strategy": "clarify", 
+    "intent_value": "概念", 
+    "reply_answer": "唔~我装满知识的大脑此刻很贫瘠", 
+    "reply_template": "'{crimeII}' 是这样的：\n", 
+    "slot_list": [
+        "crimeII"
+    ], 
+    "slot_values": {
+        "crimeII": "块钱"
+    }
+}
